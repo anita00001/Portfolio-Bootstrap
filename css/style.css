@@ -3,6 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -81,4 +87,65 @@ body {
 
 .work h2 {
   font-family: "Crete Round", sans-serif;
+}
+
+.work .card-skill {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.work-card {
+  height: 70vh;
+  color: #fff;
+}
+
+.work-card button {
+  display: none;
+}
+
+.work-card:hover {
+  padding: 0;
+}
+
+.work-card:hover h3,
+.work-card:hover p,
+.work-card:hover ul,
+.work-card:hover li {
+  display: none;
+}
+
+.work-card:hover button {
+  display: block;
+}
+
+.work .card-bg-1-4 {
+  background-image: linear-gradient(180deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../../assets/work-card-bg-1-4.png);
+  background-repeat: no-repeat;
+  background-position: 43.5% 0%;
+  background-size: cover;
+}
+
+.work .card-bg-1-4:hover {
+  background-image: url(../../assets/work-card-bg-1-4.png);
+}
+
+.work .card-bg-2-5 {
+  background-image: linear-gradient(180deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../../assets/work-card-bg-2-5.png);
+  background-repeat: no-repeat;
+  background-position: 43.5% 0%;
+  background-size: cover;
+}
+
+.work .card-bg-2-5:hover {
+  background-image: url(../../assets/work-card-bg-2-5.png);
+}
+
+.work .card-bg-3-6 {
+  background-image: linear-gradient(180deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(../../assets/work-card-bg-3-6.png);
+  background-repeat: no-repeat;
+  background-position: 45% 0%;
+  background-size: cover;
+}
+
+.work .card-bg-3-6:hover {
+  background-image: url(../../assets/work-card-bg-3-6.png);
 }
