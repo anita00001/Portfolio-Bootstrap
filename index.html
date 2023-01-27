@@ -21,7 +21,7 @@
   <!--Write bootstrap below this line -->
 
   <!-- Navigation bar ---- Toolbar -->
-  <nav class="navbar navbar-expand-lg navbar-custom">
+  <nav class="navbar navbar-expand-lg navbar-custom position-fixed w-100" style="z-index: 1;">
     <div class="container-fluid w-85">
       <a class="navbar-brand" href="#">ANITA</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -34,13 +34,16 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
+            <a class="nav-link active" aria-current="page" href="#works">Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            <a class="nav-link active" href="#aboutme">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a class="nav-link active" aria-current="page" href="#contactus">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#connectwith"><i class="fa-regular fa-envelope"></i></a>
           </li>
         </ul>
       </div>
@@ -50,7 +53,7 @@
 
   <!-- Headline Starts Here -->
   <div class="bg-dark text-light d-flex align-items-center headline bg-image">
-    <ul class="col-1 fs-5 ">
+    <ul class="col-1 fs-5">
       <li class="pb-2 list-unstyled"><i class="fa-brands fa-github"></i></li>
       <li class="pb-2 list-unstyled"><i class="fa-brands fa-linkedin-in"></i></li>
       <li class="pb-2 list-unstyled"><i class="fa-brands fa-angellist"></i></li>
@@ -72,7 +75,7 @@
   <!-- Headlin Ends Here -->
 
   <!-- Works Section Starts Here -->
-  <div class="work">
+  <div class="work" id="works">
     <!-- My RECENT WORKS -->
     <div class="py-5 my-5 mx-auto w-75 d-flex justify-content-center align-items-center">
       <h2 class="col-4 fs-1 fw-bold">My Recent Works</h2>
@@ -195,7 +198,7 @@
 
 
   <!-- About Me Section Starts here -->
-  <div class="about-me mt-5 d-flex flex-column bg-dark text-light">
+  <div class="about-me mt-5 d-flex flex-column bg-dark text-light" id="aboutme">
     <div class="about-me-details d-flex flex-column bg-image w-100 px-5 justify-content-center" style="
         background: url(assets/about-me-bg.png);
         background-repeat: no-repeat;
@@ -251,7 +254,7 @@
   <!-- About Me Section Ends here -->
 
   <!-- Contact Section Starts Here -->
-  <div class="d-flex my-5 p-5 justify-content-center">
+  <div class="d-flex my-5 p-5 justify-content-center" id="contactus">
     <h2 class="fw-bolder col-4 pt-5">I'm always interested in hearing about new projects, so if you'd like to chat
       please get
       in touch.
@@ -275,7 +278,7 @@
 
   <!-- Footer Section Starts Here -->
   <hr>
-  <footer>
+  <footer id="connectwith">
     <ul class="fs-4 d-flex justify-content-center align-items-center" style="color: #505f79;">
       <li class="px-2 list-unstyled"><i class="fa-brands fa-github"></i></li>
       <li class="px-2 list-unstyled"><i class="fa-brands fa-linkedin-in"></i></li>
