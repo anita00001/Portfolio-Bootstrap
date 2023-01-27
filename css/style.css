@@ -48,7 +48,8 @@ body {
   height: 90vh;
 }
 
-.headline h1 {
+.headline h1,
+.about-me-details h2 {
   font-family: "Crete Round", sans-serif;
   color: #f55800;
 }
